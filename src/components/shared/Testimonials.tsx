@@ -32,7 +32,7 @@ export default function Testimonials() {
             What Our Travelers Say
           </h2>
           <p className="text-lg max-w-2xl mx-auto dark:text-white/70">
-            Don't just take our word for it - hear from our satisfied customers
+            Don&apos;t just take our word for it - hear from our satisfied customers
           </p>
         </motion.div>
 
@@ -89,7 +89,7 @@ export default function Testimonials() {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-4 italic">
-                  "{testimonial.comment}"
+                &quot;{testimonial.comment}&quot;
                 </p>
                 <div className="flex items-center">
                   <div

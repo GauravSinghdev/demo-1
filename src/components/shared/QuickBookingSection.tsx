@@ -72,7 +72,7 @@ export default function QuickBookingSection() {
                   Quick Booking Request
                 </CardTitle>
                 <CardDescription className="text-blue-100 text-base">
-                  Tell us about your dream vacation and we'll create the perfect
+                  Tell us about your dream vacation and we&apos;ll create the perfect
                   package for you
                 </CardDescription>
               </motion.div>

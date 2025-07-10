@@ -56,7 +56,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-gray-600 dark:text-white/70 text-lg max-w-2xl mx-auto">
-            Have questions? We're here to help you plan your perfect vacation
+            Have questions? We&apos;re here to help you plan your perfect vacation
           </p>
         </motion.div>
 
@@ -158,7 +158,7 @@ export default function Contact() {
                   Send us a Message
                 </CardTitle>
                 <CardDescription>
-                  We'll get back to you within 24 hours
+                  We&apos;ll get back to you within 24 hours
                 </CardDescription>
               </CardHeader>
               <CardContent className="px-0 pb-0">

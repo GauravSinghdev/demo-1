@@ -3,14 +3,9 @@ import { useEffect, useState } from "react";
 import { Button } from "../ui/button";
 
 export default function TopPageBtn() {
-  const [scrollProgress, setScrollProgress] = useState(0);
   const [isAtTop, setIsAtTop] = useState(true);
 
   const handleScroll = () => {
-    const totalHeight =
-      document.documentElement.scrollHeight - window.innerHeight;
-    const progress = (window.scrollY / totalHeight) * 100;
-    setScrollProgress(progress);
     setIsAtTop(window.scrollY < 50); // Hide button if within 50px of top
   };
 
@@ -28,7 +23,7 @@ export default function TopPageBtn() {
       {!isAtTop && (
         <Button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-20 bg-primary/90 text-white p-4 rounded shadow-lg hover:bg-primary/90 active:bg-primary/50 transition-colors"
+          className="fixed bottom-8 right-8 z-20 bg-primary/90 text-white p-4 rounded shadow-lg hover:bg-primary/90 active:bg-primary/50 hover:scale-110 transition-all duration-300"
         >
           <svg
             className="w-4 h-4"

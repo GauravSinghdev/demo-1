@@ -14,11 +14,11 @@ export default function HeroSection() {
   return (
     <section
       ref={ref}
-      className="relative h-[600px] lg:h-[700px] flex items-center justify-center overflow-hidden"
+      className="relative h-[600px] lg:h-screen flex items-center justify-center overflow-hidden"
     >
       <motion.div style={{ y }} />
       <Image
-        src="https://cdn.pixabay.com/photo/2021/02/11/02/07/beach-6004041_1280.jpg"
+        src="https://cdn.pixabay.com/photo/2022/12/01/17/52/sea-7629517_1280.jpg"
         alt="Beautiful tropical destination"
         fill
         className="object-cover"
@@ -34,15 +34,14 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-4xl lg:text-6xl font-bold m-6"
+          className="text-4xl lg:text-6xl font-bold"
         >
           Discover Your <span className="hidden sm:inline">Next</span>
           <motion.span
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="block bg-gradient-to-r from-primary/70 to-secondary/80 text-transparent bg-clip-text"
-          >
+            className="block bg-gradient-to-r from-blue-300 to-peach-300 text-transparent bg-clip-text [text-shadow:2px_0px_rgba(0,0,0,0.5)]">
             Dream Destination
           </motion.span>
         </motion.h1>
@@ -50,7 +49,7 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-xl lg:text-2xl mb-8 opacity-90"
+          className="text-xl lg:text-2xl mb-8 text-white"
         >
           Create unforgettable memories with our carefully curated holiday
           packages
